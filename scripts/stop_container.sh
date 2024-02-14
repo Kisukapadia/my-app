@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
-# Stop the running container (if any)
-containerid=`docker ps | awk -F " " '{print $1}'`
-docker rm -f $containerid
+containerid=$(sudo docker ps -q)
+
+if [ -n "$containerid" ]; then 
+    sudo docker rm -f "$containerid"
+    sudo docker rmi $(docker images -f "dangling=true" -q)
+else
+    echo "No container running"
+fi
