@@ -8,4 +8,4 @@ if [ -n "$containerid" ]; then
     sudo docker rmi $(docker images -f "dangling=true" -q)
 else
     echo "No container running"
-fi
+fi 
