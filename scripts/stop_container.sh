@@ -1,2 +1,2 @@
-sudo docker rm -f $(sudo docker ps -q)
-sudo docker rmi $(docker images -f "dangling=true" -q)
+sudo docker rm --force $(sudo docker ps -q)
+sudo docker rmi $(docker images --force "dangling=true" -q)
