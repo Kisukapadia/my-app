@@ -15,20 +15,14 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React 
+          React App
         </a>
       </header>
-import * as React from 'react';  
-import Stack from '@mui/material/Stack';  
-import Button from '@mui/material/Button';  
-export default function BasicButtons() 
-{  
-  return (  
-    <Stack spacing={2} direction="row">  
-    <Button variant="contained">Contained</Button>  
-    </Stack>  
-  );  
-}  
+       <div>
+        < Button theme="blue" href="https://reactjs.org">
+          React Button
+        </Button>
+      </div>
     </div>
   );
 }
