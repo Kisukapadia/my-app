@@ -18,7 +18,7 @@ function App() {
           rel="noopener noreferrer"
         >
           React App    
-        </a>
+        </a>  
       </header>
       <Count/>
     </div>
