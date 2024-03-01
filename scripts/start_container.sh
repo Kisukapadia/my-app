@@ -5,5 +5,5 @@ set -e
 docker pull kisukapadia/react
 
 # Run the Docker image as a container
-docker run -d -p 3000:3000 kisukapadia/react
+docker run -d -p 3001:3001 kisukapadia/react
 
