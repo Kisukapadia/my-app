@@ -1,6 +1,6 @@
 set -e
 
-containerid=$(sudo docker ps -q)
+containerid=$(sudo docker ps -a -q)
 imageid=$(docker images -f "dangling=true" -q)
 if [ -n "$imageid" ]; then
         sudo docker rmi $(docker images -f "dangling=true" -q)
