@@ -17,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React App 
+          React Application
         </a>  
       </header>
       <Count/>
